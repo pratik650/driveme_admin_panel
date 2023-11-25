@@ -1,0 +1,28 @@
+.footer-style {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #6c757d; /* Muted text color */
+    padding: 1rem; /* Spacing */
+    font-size: 0.875rem; /* Typography */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .footer-link {
+    margin-left: 0.5rem;
+    color: #007bff; /* CoreUI brand color */
+    text-decoration: none; /* No underline */
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .react-icon {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    color: #61dafb; /* React brand color */
+  }
+  
+  .text-danger {
+    color: #dc3545; /* Bootstrap danger color for the heart icon */
+  }
+  

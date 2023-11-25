@@ -1,0 +1,122 @@
+/* UserList.css */
+.user-list {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .import-button, .new-button {
+    padding: 10px;
+    margin: 5px;
+    background-color: blue; /* Change as per the color scheme */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: calc(40% - 22px); /* Adjusts width based on padding and margin */
+    box-sizing: border-box; 
+    border-radius: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .photo-placeholder {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+  
+  .action-button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 600px) {
+    .photo-placeholder, .user-id, .full-name, .email, .phone-number, .address, .action {
+      display: table-cell;
+    }
+  }
+  
+  /* Styles for mobile screens */
+  @media (max-width: 599px) {
+    /* Hide columns for phone number, address, and action */
+    .phone-number, .address, .action {
+      display: none;
+    }
+  
+    /* Adjust table layout */
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    tr { border: 1px solid #ccc; }
+  
+    td {
+      /* Make td elements behave like block elements */
+      display: block;
+      text-align: right;
+      padding-left: 50%;
+      text-align: right;
+    }
+  
+    td:before {
+      /* Now like a table header */
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      text-align: left;
+    }
+  
+    /* Example for the first name column */
+    .full-name:before { content: "Full Name:"; }
+    .Email:before { content: "Email:"; }
+    .Phone-Number:before { content: "Phone-Number:"; }
+    .Address:before { content: "Address:"; }
+    .Action:before { content: "Action:"; }
+  
+    /* Repeat for each td element */
+  
+    /* Adjust the search input and buttons as needed */
+    .search-input, .import-button, .new-button {
+      width: 100%;
+      margin: 5px 0; /* Add space between elements */
+    }
+  }

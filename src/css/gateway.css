@@ -1,0 +1,78 @@
+.automatic-gateways-container {
+    padding: 20px;
+}
+
+.payment-methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.payment-method {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.payment-method img {
+    width: 100%;
+    min-height: 150px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.add-new-section,
+.barcode-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.add-new-section button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.barcode-section img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .payment-methods-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* MAnual Gateway css  */
+
+
+.manual-gateway-container {
+    text-align: center; /* Aligns all content in the center */
+    padding: 20px;
+  }
+  
+  .title {
+    margin-bottom: 30px; /* Adds space below the title */
+    font-size: 24px; /* Adjust the size as needed */
+    color: #333; /* Dark text color for better readability */
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center; /* Centers the child horizontally */
+    align-items: center; /* Centers the child vertically */
+    height: 300px; /* Adjust height as needed */
+  }
+  
+  .barcode-image {
+    max-width: 100%; /* Ensures the image is responsive */
+    max-height: 100%; /* Image will scale within the container */
+  }
+  

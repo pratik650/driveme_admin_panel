@@ -1,0 +1,9 @@
+.simplebar-content-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for Firefox */
+  .simplebar-content-wrapper {
+    scrollbar-width: none;
+  }
+  

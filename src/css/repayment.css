@@ -1,0 +1,36 @@
+.loan-repayments-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .action-select {
+    padding: 5px;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .loan-repayments-container, table {
+      width: 100%;
+    }
+    .action-select {
+      width: 100%;
+    }
+  }
+  
